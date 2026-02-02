@@ -73,6 +73,7 @@ Il progetto implementa un'architettura **Server-side Proxy**. Invece di chiamare
 
 ## 📧 Contatti
 
+🌍 Live Demo: https://fe-dev.vercel.app
 - **LinkedIn**: [Federico Lardieri](https://www.linkedin.com/in/federico-lardieri-403282315/)
 - **GitHub**: [@federicolardieri](https://github.com/federicolardieri)
 
