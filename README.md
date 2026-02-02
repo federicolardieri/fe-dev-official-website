@@ -73,7 +73,6 @@ Il progetto implementa un'architettura **Server-side Proxy**. Invece di chiamare
 
 ## 📧 Contatti
 
-- **Website**: [fe-dev.it](https://fe-dev.it)
 - **LinkedIn**: [Federico Lardieri](https://www.linkedin.com/in/federico-lardieri-403282315/)
 - **GitHub**: [@federicolardieri](https://github.com/federicolardieri)
 
