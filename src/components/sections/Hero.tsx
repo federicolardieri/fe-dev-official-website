@@ -32,12 +32,18 @@ export function Hero() {
                     </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full max-w-sm sm:max-w-none px-4 sm:px-0">
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full px-6 sm:px-0 sm:justify-center">
                     <Link href="https://calendly.com/federico-lardieri22/30min?month=2026-01" target="_blank" className="w-full sm:w-auto">
-                        <Button size="lg" className="w-full px-8 shadow-primary/50 shadow-lg">Prenota una Call Strategica</Button>
+                        <Button size="lg" className="w-full shadow-primary/50 shadow-lg">Prenota una Call Strategica</Button>
                     </Link>
                     <Link href="/projects" className="w-full sm:w-auto">
-                        <Button variant="outline" size="lg" className="w-full">Vedi i miei progetti</Button>
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="w-full border-white/40 bg-white/5 hover:bg-white/10"
+                        >
+                            Vedi i miei progetti
+                        </Button>
                     </Link>
                 </div>
             </div>
