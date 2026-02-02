@@ -68,7 +68,7 @@ export function AboutMe() {
                                 </div>
                                 <div>
                                     <div className="text-white font-bold text-lg">Federico Lardieri</div>
-                                    <div className="text-primary text-sm font-medium">Junior Web Developer</div>
+                                    <div className="text-primary text-sm font-medium">Web Developer & AI Automation Specialist</div>
                                 </div>
                             </div>
 
