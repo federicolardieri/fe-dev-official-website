@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Fe-Dev | AI & Automation Studio",
+  title: "Fe-Dev | Sviluppo Web & Automazioni AI",
   description: "Premium AI & Automation solutions for scaling businesses.",
   icons: {
     icon: [
