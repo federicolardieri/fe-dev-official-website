@@ -34,11 +34,21 @@ export function Starfield() {
         let targetCy = height / 2;
 
         const setCanvasSize = () => {
-            width = window.innerWidth;
-            height = window.innerHeight;
+            const parent = canvas.parentElement;
+            width = parent ? parent.clientWidth : window.innerWidth;
+            height = parent ? parent.clientHeight : window.innerHeight;
             canvas.width = width;
             canvas.height = height;
         };
+
+        const resizeObserver = new ResizeObserver(() => {
+            setCanvasSize();
+            initStars();
+        });
+
+        if (canvas.parentElement) {
+            resizeObserver.observe(canvas.parentElement);
+        }
 
         const handleMouseMove = (e: MouseEvent) => {
             targetCx = e.clientX;
@@ -124,7 +134,7 @@ export function Starfield() {
 
         return () => {
             cancelAnimationFrame(animationId);
-            window.removeEventListener("resize", setCanvasSize);
+            resizeObserver.disconnect();
             window.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
