@@ -7,12 +7,12 @@ import { Starfield } from "@/components/ui/Starfield";
 
 export function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <section className="relative min-h-screen flex flex-col items-center justify-center py-32 overflow-hidden">
             <Starfield />
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px] -z-10" />
 
-            <div className="container mx-auto px-6 flex flex-col items-center text-center z-10 space-y-10">
+            <div className="container mx-auto px-6 flex flex-col items-center text-center z-10 space-y-12">
                 {/* Logo */}
                 {/* Logo Text */}
                 <div className="relative mb-4 pb-4 px-4 md:px-20 overflow-visible">
