@@ -15,15 +15,15 @@ export function Hero() {
             <div className="container mx-auto px-6 flex flex-col items-center text-center z-10 space-y-10">
                 {/* Logo */}
                 {/* Logo Text */}
-                <div className="relative mb-4 pb-4 px-20 overflow-visible">
-                    <h1 className="text-[100px] md:text-[150px] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/50 drop-shadow-[0_0_50px_rgba(122,62,240,0.6)] leading-tight select-none inline-block whitespace-nowrap">
+                <div className="relative mb-4 pb-4 px-4 md:px-20 overflow-visible">
+                    <h1 className="text-[60px] sm:text-[80px] md:text-[150px] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/50 drop-shadow-[0_0_50px_rgba(122,62,240,0.6)] leading-tight select-none inline-block whitespace-nowrap">
                         Fe-Dev
                     </h1>
                 </div>
 
                 {/* Text Content */}
                 <div className="space-y-6 max-w-4xl mx-auto">
-                    <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight">
                         Sviluppo <span className="text-primary glow-text">Siti Web</span> <br />
                         & <span className="text-primary glow-text">Sistemi AI</span>
                     </h1>
