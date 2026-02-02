@@ -18,7 +18,8 @@ export function AboutMe() {
                                 ABOUT
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
-                                Chi c’è dietro <span className="text-primary glow-text">Fe-Dev</span>
+                                Federico Lardieri: <br />
+                                <span className="text-primary glow-text">Web Developer & AI Specialist</span>
                             </h2>
                             <p className="text-xl text-gray-300 font-medium max-w-xl">
                                 Sono Federico, Junior Web Developer con focus su backend, automazioni e sistemi AI.

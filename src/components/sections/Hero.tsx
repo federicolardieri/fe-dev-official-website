@@ -16,19 +16,19 @@ export function Hero() {
                 {/* Logo */}
                 {/* Logo Text */}
                 <div className="relative mb-4 pb-4 px-4 md:px-20 overflow-visible">
-                    <h1 className="text-[60px] sm:text-[80px] md:text-[150px] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/50 drop-shadow-[0_0_50px_rgba(122,62,240,0.6)] leading-tight select-none inline-block whitespace-nowrap">
+                    <div className="text-[60px] sm:text-[80px] md:text-[150px] font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-primary to-primary/50 drop-shadow-[0_0_50px_rgba(122,62,240,0.6)] leading-tight select-none inline-block whitespace-nowrap">
                         Fe-Dev
-                    </h1>
+                    </div>
                 </div>
 
                 {/* Text Content */}
                 <div className="space-y-6 max-w-4xl mx-auto">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                        Sviluppo <span className="text-primary glow-text">Siti Web</span> <br />
-                        & <span className="text-primary glow-text">Sistemi AI</span>
+                        Web Developer & Esperto in <br />
+                        <span className="text-primary glow-text">Sviluppo Siti Web</span> & <span className="text-primary glow-text">Automazioni AI</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Realizzo siti web completi, e-commerce e soluzioni di automazione AI per aiutare le aziende a crescere e ridurre il lavoro manuale.
+                        Sono un full stack developer specializzato nel creare ecosistemi digitali intelligenti. Realizzo siti web in Next.js, e-commerce e soluzioni di AI automation per massimizzare la scalabilità del tuo business.
                     </p>
                 </div>
 

@@ -1,10 +1,15 @@
-"use client";
-
 import { Button } from "@/components/ui/Button";
 import { Starfield } from "@/components/ui/Starfield";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
-import { ArrowLeft, Github, ExternalLink, Calendar, Briefcase, FileText } from "lucide-react";
+import { ArrowLeft, Github, Briefcase, FileText } from "lucide-react";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Portfolio Web Developer & Progetti AI",
+    description: "Esplora i progetti di Federico Lardieri: applicazioni web moderne, integrazioni API e sistemi di automazione AI per aziende.",
+    keywords: ["portfolio web developer", "progetti n8n", "automazioni AI", "casi studio sviluppo web"],
+};
 
 const projects = [
     {
@@ -71,10 +76,10 @@ export default function ProjectsPage() {
                                 Progetti
                             </div>
                             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-                                I miei progetti <span className="text-primary glow-text">reali</span>
+                                Portfolio <span className="text-primary glow-text">Web Developer</span> & Soluzioni AI
                             </h1>
                             <p className="text-xl text-gray-400">
-                                Applicazioni web, automazioni e sistemi costruiti per risolvere problemi concreti, non esercizi teorici.
+                                Scopri come applico lo sviluppo full stack e l'intelligenza artificiale per risolvere problemi di business reali.
                             </p>
                         </div>
                     </div>

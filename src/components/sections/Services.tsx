@@ -40,7 +40,7 @@ export function Services() {
             <div className="container mx-auto px-6">
                 <div className="mb-16 text-center max-w-2xl mx-auto">
                     <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">
-                        Soluzioni, non solo Servizi
+                        Servizi di Sviluppo Web & Automazioni AI
                     </h2>
                     <p className="text-gray-400">
                         Non scrivo solo codice. Costruisco sistemi che risolvono problemi di business reali e creano leva.

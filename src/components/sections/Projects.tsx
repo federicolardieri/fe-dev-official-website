@@ -28,7 +28,7 @@ export function Projects() {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
                     <div className="max-w-2xl">
                         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl mb-4">
-                            Lavori in Evidenza
+                            Portfolio Web Developer & Progetti AI
                         </h2>
                         <p className="text-gray-400">
                             Esempi reali di come aiuto le aziende a scalare attraverso la tecnologia.
