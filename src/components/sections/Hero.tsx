@@ -32,12 +32,12 @@ export function Hero() {
                     </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <Link href="https://calendly.com/federico-lardieri22/30min?month=2026-01" target="_blank">
-                        <Button size="lg" className="px-8 shadow-primary/50 shadow-lg">Prenota una Call Strategica</Button>
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 w-full max-w-sm sm:max-w-none px-4 sm:px-0">
+                    <Link href="https://calendly.com/federico-lardieri22/30min?month=2026-01" target="_blank" className="w-full sm:w-auto">
+                        <Button size="lg" className="w-full px-8 shadow-primary/50 shadow-lg">Prenota una Call Strategica</Button>
                     </Link>
-                    <Link href="/projects">
-                        <Button variant="outline" size="lg">Vedi i miei progetti</Button>
+                    <Link href="/projects" className="w-full sm:w-auto">
+                        <Button variant="outline" size="lg" className="w-full">Vedi i miei progetti</Button>
                     </Link>
                 </div>
             </div>
