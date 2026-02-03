@@ -62,6 +62,9 @@ export const metadata: Metadata = {
       { url: "/logo.jpg", sizes: "180x180", type: "image/jpeg" },
     ],
   },
+  verification: {
+    google: "rpMCnEIDGVNr98N2vA0Zu9l_n-zRDCYEI1bs6z2FHSE",
+  },
 };
 
 const jsonLd = {
