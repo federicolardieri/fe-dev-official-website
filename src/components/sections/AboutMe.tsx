@@ -33,9 +33,6 @@ export function AboutMe() {
                                 Oggi unisco sviluppo web e automazione per creare soluzioni concrete:
                                 web app, API, dashboard e integrazioni che fanno risparmiare tempo e riducono l’errore umano.
                             </p>
-                            <p>
-                                Il mio obiettivo è crescere in un team tech serio, continuando a sviluppare progetti freelance selezionati.
-                            </p>
                         </div>
 
                         <ul className="grid sm:grid-cols-2 gap-4">
