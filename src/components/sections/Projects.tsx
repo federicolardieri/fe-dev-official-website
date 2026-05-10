@@ -5,19 +5,19 @@ import Link from "next/link";
 
 const projects = [
     {
-        title: "Sito Web Vetrina – Azienda Campi Sportivi",
-        description: "Sviluppo di un sito web moderno e responsive, con struttura chiara dei servizi, sezione lavori e contatto diretto, pensato per convertire visitatori in richieste.",
-        tags: [],
+        title: "Preventivo Veloce",
+        description: "SaaS che genera preventivi in pochi secondi con l'aiuto dell'AI. Include invio email, storico, notifiche all'apertura e accettazione con firma del preventivo.",
+        tags: ["SaaS", "AI Integration", "Next.js"],
+    },
+    {
+        title: "AI Receptionist per Cliniche Dentali",
+        description: "Assistente vocale AI che risponde h24. Gestisce nuove prenotazioni, modifiche, cancellazioni, Q&A e si sincronizza automaticamente con il calendario della clinica.",
+        tags: ["n8n", "Vapi", "Claude Code"],
     },
     {
         title: "Automazione Lead, Notifiche e CRM",
         description: "Raccolta dei lead da form di contatto, qualificazione lead con AI, notifica in azienda tramite email/WhatsApp, salvataggio nel CRM e follow up cliente.",
         tags: ["Form Handling", "API", "Automazioni", "CRM Integration"],
-    },
-    {
-        title: "Automazione Servizio Clienti",
-        description: "Assistente virtuale integrato su WhatsApp che risponde h24, gestisce richieste di supporto e genera preventivi automatici basati sulle risposte dell'utente.",
-        tags: ["Chatbot", "WhatsApp", "Preventivi Auto"],
     },
 ];
 

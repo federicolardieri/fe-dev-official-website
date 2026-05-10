@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
 import { WhyFeDev } from "@/components/sections/WhyFeDev";
 import { Projects } from "@/components/sections/Projects";
+import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <WhyFeDev />
       <AboutMe />
+      <Certifications />
       <Projects />
       <Contact />
     </div>

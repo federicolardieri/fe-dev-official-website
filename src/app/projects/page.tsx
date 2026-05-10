@@ -13,12 +13,26 @@ export const metadata: Metadata = {
 
 const projects = [
     {
-        title: "E-commerce Web App Completo (Aulab)",
-        problem: "Necessità di una piattaforma e-commerce completa con gestione utenti, prodotti e ordini.",
-        solution: "Sviluppo di un’applicazione web e-commerce con autenticazione, CRUD prodotti, carrello, gestione ordini e ruoli (admin / revisore).",
-        stack: ["Laravel", "PHP", "MySQL", "CRUD", "Authentication"],
-        type: "Full Stack",
-        githubUrl: "https://github.com/federicolardieri/E-commerce-WebSite"
+        title: "Preventivo Veloce",
+        problem: "I professionisti perdono ore a creare preventivi manualmente, senza tracciamento delle aperture o sistema di firma digitale.",
+        solution: "SaaS che genera preventivi in pochi secondi con l'aiuto dell'AI. Include invio email, storico, notifiche all'apertura e accettazione con firma del preventivo.",
+        stack: ["SaaS", "AI Integration", "Next.js", "Email Automation"],
+        type: "SaaS",
+        siteUrl: "https://www.ilpreventivoveloce.it"
+    },
+    {
+        title: "AI Receptionist per Cliniche Dentali",
+        problem: "Le cliniche perdono chiamate e appuntamenti fuori orario, e lo staff spende ore al telefono per gestire le prenotazioni.",
+        solution: "Assistente vocale AI che risponde h24. Gestisce nuove prenotazioni, modifiche, cancellazioni, Q&A e si sincronizza automaticamente con il calendario della clinica.",
+        stack: ["n8n", "Vapi", "Claude Code"],
+        type: "Voice AI"
+    },
+    {
+        title: "Automazione Lead, Notifiche e CRM",
+        problem: "I lead arrivavano da più canali e venivano gestiti manualmente, con rischio di ritardi e perdita di opportunità.",
+        solution: "Raccolta dei lead da form di contatto, qualificazione lead con AI, notifica in azienda tramite email/WhatsApp, salvataggio nel CRM e follow up cliente.",
+        stack: ["Form Handling", "API", "Automazioni", "CRM Integration"],
+        type: "AI Automation"
     },
     {
         title: "Sito Web Vetrina – Azienda Campi Sportivi",
@@ -29,18 +43,19 @@ const projects = [
         siteUrl: "https://www.playinnovationgroup.com/#home"
     },
     {
+        title: "E-commerce Web App Completo (Aulab)",
+        problem: "Necessità di una piattaforma e-commerce completa con gestione utenti, prodotti e ordini.",
+        solution: "Sviluppo di un’applicazione web e-commerce con autenticazione, CRUD prodotti, carrello, gestione ordini e ruoli (admin / revisore).",
+        stack: ["Laravel", "PHP", "MySQL", "CRUD", "Authentication"],
+        type: "Full Stack",
+        githubUrl: "https://github.com/federicolardieri/E-commerce-WebSite"
+    },
+    {
         title: "Generatore PDF Intelligente per Preventivi",
         problem: "La creazione manuale dei preventivi richiedeva tempo ed era soggetta a errori di inserimento.",
         solution: "Sistema che genera automaticamente preventivi PDF a partire dai dati inseriti, riducendo il lavoro manuale e standardizzando il formato dei documenti.",
         stack: ["Backend Logic", "PDF Generation", "Automazioni"],
         type: "Automation"
-    },
-    {
-        title: "Automazione Lead, Notifiche e CRM",
-        problem: "I lead arrivavano da più canali e venivano gestiti manualmente, con rischio di ritardi e perdita di opportunità.",
-        solution: "Raccolta dei lead da form di contatto, qualificazione lead con AI, notifica in azienda tramite email/WhatsApp, salvataggio nel CRM e follow up cliente.",
-        stack: ["Form Handling", "API", "Automazioni", "CRM Integration"],
-        type: "AI Automation"
     },
     {
         title: "Risposte Email Automatiche con AI",
