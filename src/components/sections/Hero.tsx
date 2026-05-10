@@ -24,8 +24,8 @@ export function Hero() {
                 {/* Text Content */}
                 <div className="space-y-6 max-w-4xl mx-auto">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                        Esperto in <span className="text-primary glow-text">automazioni AI</span> e <br className="hidden sm:block" />
-                        <span className="text-primary glow-text">Web Developer</span> full stack
+                        Esperto in <span className="text-primary glow-text">Automazioni AI</span> e <br className="hidden sm:block" />
+                        <span className="text-primary glow-text">Sviluppo Web</span> Full-Stack
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         Aiuto aziende e imprenditori a ridurre il lavoro manuale e aumentare efficienza e fatturato.

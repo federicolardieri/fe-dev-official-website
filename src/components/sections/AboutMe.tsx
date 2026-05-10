@@ -19,10 +19,10 @@ export function AboutMe() {
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
                                 Federico Lardieri: <br />
-                                <span className="text-primary glow-text">Web Developer & AI Specialist</span>
+                                <span className="text-primary glow-text">AI Specialist & Web Developer</span>
                             </h2>
                             <p className="text-xl text-gray-300 font-medium max-w-xl">
-                                Sono Federico, Junior Web Developer con focus su backend, automazioni e sistemi AI.
+                                Sono Federico, AI Specialist e Full-stack Developer con focus su backend, automazioni e sistemi AI.
                                 Costruisco prodotti che trasformano processi manuali in flussi semplici e scalabili.
                             </p>
                         </div>
@@ -68,17 +68,16 @@ export function AboutMe() {
                                 </div>
                                 <div>
                                     <div className="text-white font-bold text-lg">Federico Lardieri</div>
-                                    <div className="text-primary text-sm font-medium">Web Developer & AI Automation Specialist</div>
+                                    <div className="text-primary text-sm font-medium">AI Specialist & Web Developer</div>
                                 </div>
                             </div>
 
                             {/* Quick Facts */}
                             <div className="space-y-4 border-y border-white/5 py-6">
                                 {[
-                                    { label: "Ruolo", value: "Junior Web Developer" },
-                                    { label: "Focus", value: "Web Developer Full Stack + Automazioni + AI" },
+                                    { label: "Ruolo", value: "AI Specialist + Full-stack Developer" },
+                                    { label: "Focus", value: "Automazioni Intelligenti per ridurre il lavoro manuale" },
                                     { label: "Disponibile", value: "Italia / Remoto" },
-                                    { label: "Stack Corrente", value: "Laravel • PHP • MySQL • Next.js" },
                                 ].map((fact, i) => (
                                     <div key={i} className="flex justify-between items-center gap-4">
                                         <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">{fact.label}</span>
@@ -91,7 +90,7 @@ export function AboutMe() {
                             <div className="space-y-4">
                                 <span className="text-gray-500 text-xs font-bold uppercase tracking-wider block">Competenze Tech</span>
                                 <div className="flex flex-wrap gap-2">
-                                    {["Laravel", "PHP", "MySQL", "JavaScript", "HTML", "CSS", "Bootstrap", "Tailwind", "Next.js", "REST API", "Git/GitHub", "n8n"].map((tech) => (
+                                    {["Claude code", "API", "MCP", "n8n", "Intelligenza Artificiale", "Next.js", "Tailwind", "HTML", "CSS", "JavaScript", "PHP", "MySQL", "Git/GitHub"].map((tech) => (
                                         <span key={tech} className="px-3 py-1 rounded-md bg-white/5 border border-white/10 text-gray-300 text-xs font-medium hover:border-primary/30 transition-colors">
                                             {tech}
                                         </span>

@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import { Starfield } from "@/components/ui/Starfield";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/Card";
-import { ArrowLeft, Github, Briefcase, FileText } from "lucide-react";
+import { ArrowLeft, Github, Briefcase, FileText, Globe } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -24,8 +24,9 @@ const projects = [
         title: "Sito Web Vetrina – Azienda Campi Sportivi",
         problem: "L’azienda aveva bisogno di una presenza online professionale per presentare servizi, progetti realizzati e contatti, migliorando la credibilità commerciale.",
         solution: "Sviluppo di un sito web moderno e responsive, con struttura chiara dei servizi, sezione lavori e contatto diretto, pensato per convertire visitatori in richieste.",
-        stack: ["HTML", "CSS", "JavaScript", "UI Responsive"],
-        type: "Web Design"
+        stack: [],
+        type: "Web Design",
+        siteUrl: "https://www.playinnovationgroup.com/#home"
     },
     {
         title: "Generatore PDF Intelligente per Preventivi",
@@ -37,9 +38,9 @@ const projects = [
     {
         title: "Automazione Lead, Notifiche e CRM",
         problem: "I lead arrivavano da più canali e venivano gestiti manualmente, con rischio di ritardi e perdita di opportunità.",
-        solution: "Automazione completa: ricezione lead da form, invio email, notifiche su Telegram/WhatsApp e salvataggio automatico nel CRM.",
+        solution: "Raccolta dei lead da form di contatto, qualificazione lead con AI, notifica in azienda tramite email/WhatsApp, salvataggio nel CRM e follow up cliente.",
         stack: ["Form Handling", "API", "Automazioni", "CRM Integration"],
-        type: "Integration"
+        type: "AI Automation"
     },
     {
         title: "Risposte Email Automatiche con AI",
@@ -137,14 +138,24 @@ export default function ProjectsPage() {
                                     </div>
 
                                     {/* Action buttons */}
-                                    {project.githubUrl && (
-                                        <div className="pt-4">
-                                            <Link href={project.githubUrl} target="_blank">
+                                    {(project.githubUrl || project.siteUrl) && (
+                                        <div className="pt-4 flex gap-4">
+                                            {project.githubUrl && (
+                                            <Link href={project.githubUrl} target="_blank" className="w-full">
                                                 <Button variant="outline" size="sm" className="w-full gap-2 border-primary/20 hover:border-primary/50 group/btn">
                                                     <Github className="w-4 h-4 transition-transform group-hover/btn:scale-110" />
                                                     Visualizza codice
                                                 </Button>
                                             </Link>
+                                            )}
+                                            {project.siteUrl && (
+                                            <Link href={project.siteUrl} target="_blank" className="w-full">
+                                                <Button variant="outline" size="sm" className="w-full gap-2 border-primary/20 hover:border-primary/50 group/btn">
+                                                    <Globe className="w-4 h-4 transition-transform group-hover/btn:scale-110" />
+                                                    Visita il sito
+                                                </Button>
+                                            </Link>
+                                            )}
                                         </div>
                                     )}
                                 </div>

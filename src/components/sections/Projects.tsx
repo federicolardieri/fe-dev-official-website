@@ -5,14 +5,14 @@ import Link from "next/link";
 
 const projects = [
     {
-        title: "Piattaforma Prenotazioni Sportive",
-        description: "Web App completa per centri sportivi. Sistema di prenotazione campi, gestione pagamenti e dashboard amministrativa per monitorare le entrate.",
-        tags: ["Next.js", "Stripe", "Dashboard"],
+        title: "Sito Web Vetrina – Azienda Campi Sportivi",
+        description: "Sviluppo di un sito web moderno e responsive, con struttura chiara dei servizi, sezione lavori e contatto diretto, pensato per convertire visitatori in richieste.",
+        tags: [],
     },
     {
-        title: "AI Lead Gen System",
-        description: "Sistema automatizzato che qualifica i lead, invia risposte email immediate e notifica il team commerciale su Telegram/WhatsApp. Salvataggio automatico nel CRM.",
-        tags: ["AI Agents", "CRM Automation", "WhatsApp API"],
+        title: "Automazione Lead, Notifiche e CRM",
+        description: "Raccolta dei lead da form di contatto, qualificazione lead con AI, notifica in azienda tramite email/WhatsApp, salvataggio nel CRM e follow up cliente.",
+        tags: ["Form Handling", "API", "Automazioni", "CRM Integration"],
     },
     {
         title: "Automazione Servizio Clienti",
