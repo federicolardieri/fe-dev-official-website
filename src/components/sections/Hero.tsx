@@ -24,11 +24,11 @@ export function Hero() {
                 {/* Text Content */}
                 <div className="space-y-6 max-w-4xl mx-auto">
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                        Web Developer & Esperto in <br />
-                        <span className="text-primary glow-text">Sviluppo Siti Web</span> & <span className="text-primary glow-text">Automazioni AI</span>
+                        Esperto in <span className="text-primary glow-text">automazioni AI</span> e <br className="hidden sm:block" />
+                        <span className="text-primary glow-text">Web Developer</span> full stack
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Sono un full stack developer specializzato nel creare ecosistemi digitali intelligenti. Realizzo siti web in Next.js, e-commerce e soluzioni di AI automation per massimizzare la scalabilità del tuo business.
+                        Aiuto aziende e imprenditori a ridurre il lavoro manuale e aumentare efficienza e fatturato.
                     </p>
                 </div>
 

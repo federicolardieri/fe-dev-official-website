@@ -28,8 +28,8 @@ const services = [
         icon: Database,
     },
     {
-        title: "Integrazioni API",
-        description: "Colma il divario tra i tuoi software disconnessi. Costruisco API robuste per garantire un flusso di dati fluido.",
+        title: "Integrazioni API & Server MCP",
+        description: "Colma il divario tra i tuoi software disconnessi. Costruisco API robuste e integro Server MCP (Model Context Protocol) per potenziare l'AI e garantire un flusso di dati fluido.",
         icon: Zap,
     },
 ];
