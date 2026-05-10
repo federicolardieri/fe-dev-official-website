@@ -63,6 +63,13 @@ const projects = [
         solution: "Sistema che analizza le email in ingresso, genera una risposta tramite AI, invia un riepilogo su WhatsApp/Telegram e permette l’approvazione manuale prima dell’invio.",
         stack: ["AI Integration", "Email Handling", "Workflow Automation", "Messaging APIs"],
         type: "AI & Automation"
+    },
+    {
+        title: "Lead Scraper & Outreach Dashboard",
+        problem: "La ricerca dei lead e l'invio di email a freddo venivano gestiti su fogli Excel scollegati, senza statistiche e con follow-up manuali lenti.",
+        solution: "Dashboard integrata con Apify per estrarre lead. Permette di gestire gli stati, inviare email in automatico ai contatti nuovi e programmare follow-up dopo X giorni. Include storico e statistiche di conversione.",
+        stack: ["Apify", "Next.js", "Email Automation", "Web Scraping"],
+        type: "Internal Tool"
     }
 ];
 
