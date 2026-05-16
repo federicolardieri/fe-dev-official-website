@@ -13,7 +13,7 @@ export function Contact() {
         telefono: "",
         azienda: "",
         ruolo: "",
-        servizio: "Sviluppo Web & E-Commerce",
+        servizio: "Lead Automation",
         messaggio: "",
         fatturato: "< 500k",
         sito: "",
@@ -52,7 +52,7 @@ export function Contact() {
                 sito: userType === "azienda" ? formData.sito : "",
                 dimensioni: userType === "azienda" ? formData.dimensioni : "",
                 timestamp: new Date().toISOString(),
-                source: "Fe-Dev Website"
+                source: "Federico Lardieri Website"
             };
 
             const response = await fetch("/api/contact", {
@@ -65,7 +65,7 @@ export function Contact() {
                 setStatus("success");
                 setFormData({
                     nome: "", email: "", telefono: "", azienda: "", ruolo: "",
-                    servizio: "Sviluppo Web & E-Commerce", messaggio: "",
+                    servizio: "Lead Automation", messaggio: "",
                     fatturato: "< 500k", sito: "", dimensioni: "1-10 dipendenti",
                     investimento: userType === "azienda" ? "< 5.000 €" : "0 - 1.000 €",
                     fonte: "LinkedIn",
@@ -81,7 +81,8 @@ export function Contact() {
     };
 
     return (
-        <section id="contact" className="py-32 relative bg-black">
+        <section id="contact" className="py-32 relative bg-black overflow-hidden">
+            <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-primary/15 to-transparent pointer-events-none z-10" />
             <div className="container mx-auto px-6 max-w-5xl">
                 <div className="text-center mb-16 space-y-4">
                     <div className="inline-block px-4 py-1.5 rounded-full border border-primary/20 bg-primary/10 text-primary text-sm font-medium mb-4">
@@ -238,9 +239,10 @@ export function Contact() {
                                 onChange={handleChange}
                                 className="w-full bg-[#111] border border-white/5 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none cursor-pointer"
                             >
-                                <option>Sviluppo Web & E-Commerce</option>
-                                <option>Automazione AI</option>
-                                <option>Consulenza Strategica</option>
+                                <option>Lead Automation</option>
+                                <option>AI Receptionist</option>
+                                <option>WhatsApp Agent</option>
+                                <option>Altro / Non so ancora</option>
                             </select>
                         </div>
 

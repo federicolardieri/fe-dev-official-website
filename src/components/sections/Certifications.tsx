@@ -39,6 +39,7 @@ const certifications = [
 export function Certifications() {
     return (
         <section id="certifications" className="py-24 bg-[#0B0B0F] relative overflow-hidden">
+            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-primary/15 to-transparent pointer-events-none z-10" />
             <div className="absolute right-1/4 top-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[120px] -z-10" />
 
             <div className="container mx-auto px-6">
