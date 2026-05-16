@@ -99,6 +99,21 @@ export function ServicePackages() {
                         ))}
                     </div>
                 </div>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="mt-10 text-center"
+                >
+                    <p className="text-[#64647A] text-sm">
+                        Hai un processo specifico che vuoi automatizzare?{" "}
+                        <span className="text-primary font-semibold">
+                            Costruiamo insieme una soluzione su misura.
+                        </span>
+                    </p>
+                </motion.div>
             </div>
         </section>
     );
@@ -111,14 +126,14 @@ function ServiceCard({ service: s, index }: { service: Service; index: number })
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, delay: index * 0.08, ease: "easeOut" }}
-            className="group bg-white border border-black/[0.08] rounded-2xl p-8 flex flex-col hover:border-primary/30 hover:shadow-xl transition-all duration-300 relative overflow-hidden"
+            className="group bg-white border border-black/[0.08] rounded-2xl p-8 flex flex-col hover:border-primary/40 hover:shadow-[0_8px_40px_rgba(122,62,240,0.18)] hover:scale-[1.015] transition-all duration-300 relative overflow-hidden"
         >
             {/* Gradient accent top */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary/50 to-transparent opacity-20 group-hover:opacity-100 transition-opacity duration-300" />
 
             {/* Number + Icon */}
             <div className="flex items-center justify-between mb-8">
-                <span className="text-6xl font-bold text-black/[0.04] group-hover:text-primary/10 transition-colors leading-none select-none">
+                <span className="text-6xl font-bold text-primary/20 group-hover:text-primary/40 transition-colors leading-none select-none">
                     {s.number}
                 </span>
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
