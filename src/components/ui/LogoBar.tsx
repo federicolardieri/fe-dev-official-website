@@ -11,6 +11,13 @@ const tools = [
     "Google Sheets",
     "HubSpot",
     "Calendly",
+    "Google Calendar",
+    "Salesforce",
+    "Airtable",
+    "Gemini",
+    "Twilio",
+    "360dialog",
+    "Blotato",
 ];
 
 const doubled = [...tools, ...tools];
