@@ -42,6 +42,7 @@ export function CaseStudies() {
     return (
         <section id="scenari" className="py-24 bg-[#F4F4F8] relative overflow-hidden">
             <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-primary/20 to-transparent pointer-events-none z-10" />
+            <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-primary/20 to-transparent pointer-events-none z-10" />
             <div className="container mx-auto px-6 relative z-20">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
