@@ -57,14 +57,15 @@ export function Process() {
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, margin: "-80px" }}
                             transition={{ duration: 0.5, delay: i * 0.2, ease: "easeOut" }}
-                            className="relative p-8 rounded-2xl border border-white/[0.08] bg-white/[0.03] hover:border-primary/30 hover:bg-white/[0.05] transition-all duration-300"
+                            className="group relative p-8 rounded-2xl border border-white/15 bg-white/[0.03] hover:border-white/30 hover:bg-white/[0.06] hover:shadow-[0_8px_40px_rgba(122,62,240,0.12)] hover:scale-[1.02] transition-all duration-300 overflow-hidden"
                         >
+                            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             {/* Connector line (not last) */}
                             {i < steps.length - 1 && (
                                 <div className="hidden md:block absolute top-1/2 -right-3 w-6 h-px bg-primary/30 z-10" />
                             )}
 
-                            <div className="text-6xl font-bold text-primary/20 leading-none mb-6">
+                            <div className="text-6xl font-bold text-primary/30 leading-none mb-6">
                                 {step.number}
                             </div>
                             <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
