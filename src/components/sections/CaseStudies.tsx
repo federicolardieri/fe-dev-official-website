@@ -69,13 +69,14 @@ export function CaseStudies() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-80px" }}
                             transition={{ duration: 0.5, delay: i * 0.15, ease: "easeOut" }}
-                            className="bg-white border border-black/[0.08] rounded-2xl overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+                            className="group bg-white border border-black/[0.08] rounded-2xl overflow-hidden hover:shadow-[0_8px_40px_rgba(122,62,240,0.15)] hover:border-primary/40 hover:scale-[1.015] transition-all duration-300 relative"
                         >
+                            <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-primary via-primary/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                             {/* Header card */}
                             <div className="p-6 border-b border-black/[0.06]">
                                 <div className="flex items-center justify-between mb-3">
                                     <span className="text-xs font-bold text-primary uppercase tracking-wider">{s.type}</span>
-                                    <span className="text-xs text-[#64647A] bg-black/5 px-2 py-1 rounded-md">{s.industry}</span>
+                                    <span className="text-xs text-[#64647A] bg-black/5 border border-black/[0.08] px-2 py-1 rounded-md">{s.industry}</span>
                                 </div>
                             </div>
 
