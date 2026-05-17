@@ -38,7 +38,7 @@ export function Header() {
                     ? "w-[calc(100%-3rem)] max-w-5xl rounded-2xl bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl shadow-black/10 px-4 md:px-6"
                     : "w-full bg-white border-b border-gray-200 px-4 md:px-6"
             )}>
-                <div className="relative flex h-14 md:h-24 items-center overflow-visible">
+                <div className="relative flex h-14 md:h-16 items-center overflow-visible">
                     <Link href="/" className="h-full flex items-center overflow-visible hover:opacity-80 transition-opacity shrink-0">
                         <Image
                             src="/federico-no-sfondo.png"
@@ -46,8 +46,8 @@ export function Header() {
                             width={1211}
                             height={271}
                             className={cn(
-                                "w-auto object-contain md:translate-y-2 transition-all duration-500",
-                                scrolled ? "h-10 md:h-44" : "h-12 md:h-64"
+                                "w-auto object-contain transition-all duration-500",
+                                scrolled ? "h-10 md:h-12" : "h-12 md:h-14"
                             )}
                             priority
                         />
