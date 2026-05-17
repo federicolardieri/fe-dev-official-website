@@ -4,11 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { ArrowLeft, Github, Briefcase, FileText, Globe } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { CALENDLY_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-    title: "Portfolio Web Developer & Progetti AI",
-    description: "Esplora i progetti di Federico Lardieri: applicazioni web moderne, integrazioni API e sistemi di automazione AI per aziende.",
-    keywords: ["portfolio web developer", "progetti n8n", "automazioni AI", "casi studio sviluppo web"],
+    title: "Progetti — Federico Lardieri | AI Automation Specialist",
+    description: "Esplora i progetti di Federico Lardieri: automazioni AI, applicazioni web moderne, integrazioni API e sistemi intelligenti per aziende italiane.",
+    keywords: ["portfolio web developer", "progetti n8n", "automazioni AI", "casi studio sviluppo web", "Federico Lardieri"],
 };
 
 const projects = [
@@ -99,7 +100,7 @@ export default function ProjectsPage() {
                                 Progetti
                             </div>
                             <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-                                Portfolio <span className="text-primary glow-text">Web Developer</span> & Soluzioni AI
+                                Progetti di <span className="text-primary glow-text">Automazione AI</span> — Federico Lardieri
                             </h1>
                             <p className="text-xl text-gray-400">
                                 Scopri come applico lo sviluppo full stack e l'intelligenza artificiale per risolvere problemi di business reali.
@@ -190,14 +191,19 @@ export default function ProjectsPage() {
                         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] h-[1px] bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
                         <div className="space-y-4">
-                            <h2 className="text-3xl font-bold text-white tracking-tight">Hai in mente un progetto?</h2>
-                            <p className="text-gray-400">Parliamo di come posso aiutarti a realizzarlo.</p>
+                            <h2 className="text-3xl font-bold text-white tracking-tight">Pronto ad automatizzare?</h2>
+                            <p className="text-gray-400">Prenota una call gratuita e analizziamo insieme come l'AI può far crescere il tuo business.</p>
                         </div>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <Link href="https://calendly.com/federico-lardieri22/30min?month=2026-01" target="_blank">
+                            <Link href={CALENDLY_URL} target="_blank">
                                 <Button size="lg" className="px-10 h-14 bg-primary hover:bg-primary/90 text-white font-bold shadow-xl shadow-primary/20">
-                                    Parliamo del tuo progetto
+                                    Prenota una Call Gratuita
+                                </Button>
+                            </Link>
+                            <Link href="/#contact">
+                                <Button variant="outline" size="lg" className="px-10 h-14 border-white/20 text-white hover:bg-white/5">
+                                    Scrivimi
                                 </Button>
                             </Link>
                         </div>

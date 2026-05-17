@@ -11,13 +11,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://fe-dev.vercel.app"),
+  metadataBase: new URL("https://federicolardieri.com"),
   title: {
-    default: "Fe-Dev | Sviluppo Web & Automazioni AI",
-    template: "%s | Fe-Dev"
+    default: "Federico Lardieri | AI Automation Specialist",
+    template: "%s | Federico Lardieri"
   },
-  description: "Web Developer & AI Specialist. Sviluppo siti web moderni, e-commerce e soluzioni di automazione AI per scalare il tuo business. Esperti in Next.js e integrazioni n8n.",
-  keywords: ["web developer", "full stack developer", "sviluppo siti web", "automazioni AI", "AI automation", "Next.js developer", "Federico Lardieri", "Fe-Dev"],
+  description: "Federico Lardieri — AI Automation Specialist. Progetto e implemento sistemi di automazione AI per aziende che vogliono ridurre il lavoro manuale, aumentare il fatturato e scalare senza assumere.",
+  keywords: ["AI automation", "automazioni AI", "AI specialist", "Federico Lardieri", "n8n", "automazione processi", "intelligenza artificiale aziende", "web developer"],
   authors: [{ name: "Federico Lardieri" }],
   creator: "Federico Lardieri",
   robots: {
@@ -34,23 +34,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "it_IT",
-    url: "https://fe-dev.vercel.app",
-    title: "Fe-Dev | Sviluppo Web & Automazioni AI",
-    description: "Web Developer & AI Specialist. Sviluppo siti web, e-commerce e automazioni AI su misura.",
-    siteName: "Fe-Dev",
+    url: "https://federicolardieri.com",
+    title: "Federico Lardieri | AI Automation Specialist",
+    description: "Federico Lardieri — AI Automation Specialist. Sistemi di automazione AI su misura per aziende italiane.",
+    siteName: "Federico Lardieri",
     images: [
       {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Fe-Dev - Sviluppo Web & Automazioni AI",
+        alt: "Federico Lardieri - AI Automation Specialist",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fe-Dev | Sviluppo Web & Automazioni AI",
-    description: "Sviluppo siti web moderni e soluzioni di automazione AI per aziende.",
+    title: "Federico Lardieri | AI Automation Specialist",
+    description: "Sistemi di automazione AI per aziende che vogliono crescere senza assumere nuovo personale.",
     images: ["/logo.jpg"],
   },
   icons: {
@@ -72,23 +72,23 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://fe-dev.vercel.app/#person",
+      "@id": "https://federicolardieri.com/#person",
       "name": "Federico Lardieri",
-      "jobTitle": "Web Developer & AI Specialist",
-      "url": "https://fe-dev.vercel.app",
+      "jobTitle": "AI Automation Specialist",
+      "url": "https://federicolardieri.com",
       "sameAs": [
         "https://www.linkedin.com/in/federico-lardieri-403282315/",
         "https://github.com/federicolardieri"
       ],
-      "image": "https://fe-dev.vercel.app/logo.jpg"
+      "image": "https://federicolardieri.com/logo.jpg"
     },
     {
       "@type": "WebSite",
-      "@id": "https://fe-dev.vercel.app/#website",
-      "url": "https://fe-dev.vercel.app",
-      "name": "Fe-Dev",
-      "description": "Studio di Sviluppo Web e Automazioni AI",
-      "publisher": { "@id": "https://fe-dev.vercel.app/#person" }
+      "@id": "https://federicolardieri.com/#website",
+      "url": "https://federicolardieri.com",
+      "name": "Federico Lardieri — AI Automation",
+      "description": "Sistemi di automazione AI per aziende italiane",
+      "publisher": { "@id": "https://federicolardieri.com/#person" }
     }
   ]
 };

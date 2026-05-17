@@ -1,20 +1,24 @@
-import { AboutMe } from "@/components/sections/AboutMe";
 import { Hero } from "@/components/sections/Hero";
-import { Services } from "@/components/sections/Services";
-import { WhyFeDev } from "@/components/sections/WhyFeDev";
-import { Projects } from "@/components/sections/Projects";
+import { ProblemSolution } from "@/components/sections/ProblemSolution";
+import { ServicePackages } from "@/components/sections/ServicePackages";
+import { Process } from "@/components/sections/Process";
+import { CaseStudies } from "@/components/sections/CaseStudies";
+import { AboutMe } from "@/components/sections/AboutMe";
 import { Certifications } from "@/components/sections/Certifications";
 import { Contact } from "@/components/sections/Contact";
+import { LogoBar } from "@/components/ui/LogoBar";
 
 export default function Home() {
   return (
     <div className="pb-0">
       <Hero />
-      <Services />
-      <WhyFeDev />
+      <LogoBar />
+      <ProblemSolution />
+      <ServicePackages />
+      <Process />
+      <CaseStudies />
       <AboutMe />
       <Certifications />
-      <Projects />
       <Contact />
     </div>
   );
