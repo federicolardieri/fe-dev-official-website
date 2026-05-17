@@ -96,16 +96,17 @@ export function Contact() {
                     </p>
                 </div>
 
-                <div className="bg-white rounded-3xl p-8 md:p-12 border border-black/[0.08] shadow-sm relative overflow-hidden">
+                <div className="bg-[#0B0B0F] rounded-3xl p-8 md:p-12 border border-primary/25 shadow-[0_0_40px_rgba(122,62,240,0.08)] relative overflow-hidden">
+                    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
                     {/* User Type Selector */}
-                    <div className="flex gap-4 mb-12 justify-center p-1.5 bg-black/5 border border-black/[0.08] rounded-2xl w-fit mx-auto">
+                    <div className="flex gap-4 mb-12 justify-center p-1.5 bg-white/5 border border-white/10 rounded-2xl w-fit mx-auto">
                         <button
                             type="button"
                             onClick={() => handleUserTypeChange("azienda")}
                             className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 font-bold text-sm ${userType === "azienda"
                                 ? "bg-primary text-white shadow-lg shadow-primary/20"
-                                : "text-[#64647A] hover:text-[#0F0F14]"
+                                : "text-gray-400 hover:text-white"
                                 }`}
                         >
                             <Building2 className="w-4 h-4" />
@@ -116,7 +117,7 @@ export function Contact() {
                             onClick={() => handleUserTypeChange("privato")}
                             className={`flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-300 font-bold text-sm ${userType === "privato"
                                 ? "bg-primary text-white shadow-lg shadow-primary/20"
-                                : "text-[#64647A] hover:text-[#0F0F14]"
+                                : "text-gray-400 hover:text-white"
                                 }`}
                         >
                             <User className="w-4 h-4" />
@@ -126,7 +127,7 @@ export function Contact() {
 
                     {/* Status Messages */}
                     {status === "success" && (
-                        <div className="mb-8 p-6 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center gap-4 text-green-700 animate-in fade-in slide-in-from-top-4">
+                        <div className="mb-8 p-6 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center gap-4 text-green-400 animate-in fade-in slide-in-from-top-4">
                             <CheckCircle2 className="w-6 h-6 flex-shrink-0" />
                             <div>
                                 <p className="font-bold">Richiesta inviata con successo!</p>
@@ -136,7 +137,7 @@ export function Contact() {
                     )}
 
                     {status === "error" && (
-                        <div className="mb-8 p-6 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center gap-4 text-red-700 animate-in fade-in slide-in-from-top-4">
+                        <div className="mb-8 p-6 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center gap-4 text-red-400 animate-in fade-in slide-in-from-top-4">
                             <AlertCircle className="w-6 h-6 flex-shrink-0" />
                             <div>
                                 <p className="font-bold">Qualcosa è andato storto.</p>
@@ -160,18 +161,18 @@ export function Contact() {
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Nome e Cognome *</label>
+                                <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Nome e Cognome *</label>
                                 <input
                                     required
                                     name="nome"
                                     value={formData.nome}
                                     onChange={handleChange}
                                     type="text"
-                                    className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all"
+                                    className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all"
                                 />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">
+                                <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">
                                     {userType === "azienda" ? "Email Aziendale *" : "Email Personale *"}
                                 </label>
                                 <input
@@ -180,16 +181,16 @@ export function Contact() {
                                     value={formData.email}
                                     onChange={handleChange}
                                     type="email"
-                                    className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all"
+                                    className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all"
                                 />
                             </div>
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Numero di Telefono</label>
-                                <div className="flex bg-white border border-black/[0.10] rounded-lg overflow-hidden">
-                                    <div className="px-4 py-4 bg-black/5 text-[#64647A] border-r border-black/[0.08] flex items-center gap-2">
+                                <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Numero di Telefono</label>
+                                <div className="flex bg-white/5 border border-primary/30 rounded-lg overflow-hidden">
+                                    <div className="px-4 py-4 bg-white/10 text-gray-400 border-r border-white/10 flex items-center gap-2">
                                         🇮🇹 +39
                                     </div>
                                     <input
@@ -197,20 +198,20 @@ export function Contact() {
                                         value={formData.telefono}
                                         onChange={handleChange}
                                         type="tel"
-                                        className="w-full bg-transparent px-4 py-4 text-[#0F0F14] outline-none"
+                                        className="w-full bg-transparent px-4 py-4 text-white outline-none"
                                     />
                                 </div>
                             </div>
                             {userType === "azienda" && (
                                 <div className="space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                                    <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Nome Azienda *</label>
+                                    <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Nome Azienda *</label>
                                     <input
                                         required={userType === "azienda"}
                                         name="azienda"
                                         value={formData.azienda}
                                         onChange={handleChange}
                                         type="text"
-                                        className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all"
+                                        className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all"
                                     />
                                 </div>
                             )}
@@ -218,7 +219,7 @@ export function Contact() {
 
                         {userType === "azienda" && (
                             <div className="space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                                <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Qual è il ruolo della tua azienda? *</label>
+                                <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Qual è il ruolo della tua azienda? *</label>
                                 <input
                                     required={userType === "azienda"}
                                     name="ruolo"
@@ -226,18 +227,18 @@ export function Contact() {
                                     onChange={handleChange}
                                     type="text"
                                     placeholder="es. CEO, Marketing Manager, Developer..."
-                                    className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all placeholder:text-[#9CA3AF]"
+                                    className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-600"
                                 />
                             </div>
                         )}
 
                         <div className="space-y-2">
-                            <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">A quale servizio sei interessato? *</label>
+                            <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">A quale servizio sei interessato? *</label>
                             <select
                                 name="servizio"
                                 value={formData.servizio}
                                 onChange={handleChange}
-                                className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all appearance-none cursor-pointer"
+                                className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer"
                             >
                                 <option>Lead Automation</option>
                                 <option>AI Receptionist</option>
@@ -247,26 +248,26 @@ export function Contact() {
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Descrivici in modo specifico il progetto *</label>
+                            <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Descrivici in modo specifico il progetto *</label>
                             <textarea
                                 required
                                 name="messaggio"
                                 value={formData.messaggio}
                                 onChange={handleChange}
                                 rows={6}
-                                className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all resize-none"
+                                className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all resize-none"
                             ></textarea>
                         </div>
 
                         {userType === "azienda" && (
                             <div className="grid md:grid-cols-2 gap-8 animate-in fade-in slide-in-from-bottom-2 duration-300">
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Fatturato Annuale</label>
+                                    <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Fatturato Annuale</label>
                                     <select
                                         name="fatturato"
                                         value={formData.fatturato}
                                         onChange={handleChange}
-                                        className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all appearance-none cursor-pointer"
+                                        className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer"
                                     >
                                         <option>{"< 500k"}</option>
                                         <option>500k - 1M</option>
@@ -274,14 +275,14 @@ export function Contact() {
                                     </select>
                                 </div>
                                 <div className="space-y-2">
-                                    <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Sito Web Aziendale</label>
+                                    <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Sito Web Aziendale</label>
                                     <input
                                         name="sito"
                                         value={formData.sito}
                                         onChange={handleChange}
                                         type="url"
                                         placeholder="www.tuaazienda.it"
-                                        className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all placeholder:text-[#9CA3AF]"
+                                        className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all placeholder:text-gray-600"
                                     />
                                 </div>
                             </div>
@@ -290,13 +291,13 @@ export function Contact() {
                         <div className="grid md:grid-cols-2 gap-8">
                             {userType === "azienda" && (
                                 <div className="space-y-2 animate-in fade-in slide-in-from-bottom-2 duration-300">
-                                    <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Dimensioni dell'azienda *</label>
+                                    <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Dimensioni dell'azienda *</label>
                                     <select
                                         required={userType === "azienda"}
                                         name="dimensioni"
                                         value={formData.dimensioni}
                                         onChange={handleChange}
-                                        className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all appearance-none cursor-pointer"
+                                        className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer"
                                     >
                                         <option>1-10 dipendenti</option>
                                         <option>11-50 dipendenti</option>
@@ -305,12 +306,12 @@ export function Contact() {
                                 </div>
                             )}
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Investimento per il progetto *</label>
+                                <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Investimento per il progetto *</label>
                                 <select
                                     name="investimento"
                                     value={formData.investimento}
                                     onChange={handleChange}
-                                    className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all appearance-none cursor-pointer"
+                                    className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer"
                                 >
                                     {userType === "azienda" ? (
                                         <>
@@ -330,12 +331,12 @@ export function Contact() {
                         </div>
 
                         <div className="space-y-2">
-                            <label className="text-xs font-bold text-[#64647A] uppercase tracking-wider">Come hai sentito parlare di noi? *</label>
+                            <label className="text-xs font-bold text-gray-400 uppercase tracking-wider">Come hai sentito parlare di noi? *</label>
                             <select
                                 name="fonte"
                                 value={formData.fonte}
                                 onChange={handleChange}
-                                className="w-full bg-white border border-black/[0.10] rounded-lg px-4 py-4 text-[#0F0F14] focus:border-primary focus:ring-1 focus:ring-primary/30 outline-none transition-all appearance-none cursor-pointer"
+                                className="w-full bg-white/5 border border-primary/30 rounded-lg px-4 py-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/20 outline-none transition-all appearance-none cursor-pointer"
                             >
                                 <option>LinkedIn</option>
                                 <option>Passaparola</option>
