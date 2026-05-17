@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Federico Lardieri",
     images: [
       {
-        url: "/logo.jpg",
+        url: "/federico-lardieri.png",
         width: 1200,
         height: 630,
         alt: "Federico Lardieri - AI Automation Specialist",
@@ -51,16 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Federico Lardieri | AI Automation Specialist",
     description: "Sistemi di automazione AI per aziende che vogliono crescere senza assumere nuovo personale.",
-    images: ["/logo.jpg"],
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/logo.jpg", type: "image/jpeg" },
-    ],
-    apple: [
-      { url: "/logo.jpg", sizes: "180x180", type: "image/jpeg" },
-    ],
+    images: ["/federico-lardieri.png"],
   },
   verification: {
     google: "rpMCnEIDGVNr98N2vA0Zu9l_n-zRDCYEI1bs6z2FHSE",
@@ -80,7 +71,7 @@ const jsonLd = {
         "https://www.linkedin.com/in/federico-lardieri-403282315/",
         "https://github.com/federicolardieri"
       ],
-      "image": "https://federicolardieri.com/logo.jpg"
+      "image": "https://federicolardieri.com/federico-lardieri.png"
     },
     {
       "@type": "WebSite",

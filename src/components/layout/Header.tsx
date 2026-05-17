@@ -28,49 +28,50 @@ export function Header() {
     ];
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-3 transition-all duration-500">
+        <header className={cn(
+            "fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500",
+            scrolled ? "pt-3" : "pt-0"
+        )}>
             <div className={cn(
-                "transition-all duration-500",
+                "transition-all duration-500 overflow-visible",
                 scrolled
-                    ? "w-full max-w-5xl mx-6 rounded-2xl bg-[#0B0B0F]/90 backdrop-blur-xl border border-white/10 shadow-2xl shadow-black/50 px-6"
-                    : "w-full bg-background/80 backdrop-blur-md border-b border-white/5 px-6"
+                    ? "w-full max-w-5xl mx-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl shadow-black/10 px-6"
+                    : "w-full bg-white border-b border-gray-200 px-6"
             )}>
-                <div className="flex h-16 md:h-20 items-center justify-between">
-                    <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
-                        <div className="relative w-10 h-10 rounded-full overflow-hidden border border-primary/30 shadow-[0_0_15px_rgba(122,62,240,0.3)] flex-shrink-0">
-                            <Image
-                                src="/logo.jpg"
-                                alt="Federico Lardieri"
-                                fill
-                                className="object-cover"
-                                priority
-                            />
-                        </div>
-                        <div className="hidden md:block">
-                            <div className="text-base font-bold text-white leading-none">Federico Lardieri</div>
-                            <div className="text-xs text-primary mt-0.5 leading-none">AI Automation Specialist</div>
-                        </div>
+                <div className="relative flex h-20 md:h-24 items-center overflow-visible">
+                    <Link href="/" className="h-full flex items-center overflow-visible hover:opacity-80 transition-opacity shrink-0">
+                        <Image
+                            src="/federico-no-sfondo.png"
+                            alt="Federico Lardieri"
+                            width={500}
+                            height={100}
+                            className={cn(
+                                "w-auto object-contain translate-y-2 transition-all duration-500",
+                                scrolled ? "h-36 md:h-44" : "h-48 md:h-64"
+                            )}
+                            priority
+                        />
                     </Link>
 
-                    <nav className="hidden md:flex items-center gap-8">
+                    <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-8">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.label}
                                 href={link.href}
-                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
+                                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
                             >
                                 {link.label}
                             </Link>
                         ))}
                     </nav>
 
-                    <div className="flex items-center gap-4">
+                    <div className="ml-auto flex items-center gap-4 shrink-0">
                         <Link href={CALENDLY_URL} target="_blank" className="hidden sm:block">
                             <Button size="sm">Prenota una Call</Button>
                         </Link>
 
                         <button
-                            className="md:hidden p-2 text-gray-400 hover:text-white transition-colors"
+                            className="md:hidden p-2 text-gray-500 hover:text-gray-900 transition-colors"
                             onClick={toggleMenu}
                             aria-label="Toggle Menu"
                         >
@@ -80,14 +81,14 @@ export function Header() {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="md:hidden border-t border-white/5 animate-in fade-in slide-in-from-top-2 duration-200">
-                        <nav className="flex flex-col p-6 space-y-4">
+                    <div className="md:hidden border-t border-gray-200 animate-in fade-in slide-in-from-top-2 duration-200">
+                        <nav className="flex flex-col p-6 space-y-4 bg-white">
                             {navLinks.map((link) => (
                                 <Link
-                                    key={link.label}
+                                    key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMenuOpen(false)}
-                                    className="text-lg font-medium text-gray-400 hover:text-white transition-colors"
+                                    className="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors"
                                 >
                                     {link.label}
                                 </Link>
