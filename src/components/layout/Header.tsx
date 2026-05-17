@@ -33,21 +33,21 @@ export function Header() {
             scrolled ? "pt-3" : "pt-0"
         )}>
             <div className={cn(
-                "transition-all duration-500 overflow-visible",
+                "transition-all duration-500",
                 scrolled
-                    ? "w-full max-w-5xl mx-6 rounded-2xl bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl shadow-black/10 px-6"
-                    : "w-full bg-white border-b border-gray-200 px-6"
+                    ? "w-[calc(100%-3rem)] max-w-5xl rounded-2xl bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl shadow-black/10 px-4 md:px-6"
+                    : "w-full bg-white border-b border-gray-200 px-4 md:px-6"
             )}>
-                <div className="relative flex h-20 md:h-24 items-center overflow-visible">
+                <div className="relative flex h-14 md:h-24 items-center overflow-visible">
                     <Link href="/" className="h-full flex items-center overflow-visible hover:opacity-80 transition-opacity shrink-0">
                         <Image
                             src="/federico-no-sfondo.png"
                             alt="Federico Lardieri"
-                            width={500}
-                            height={100}
+                            width={1211}
+                            height={271}
                             className={cn(
-                                "w-auto object-contain translate-y-2 transition-all duration-500",
-                                scrolled ? "h-36 md:h-44" : "h-48 md:h-64"
+                                "w-auto object-contain md:translate-y-2 transition-all duration-500",
+                                scrolled ? "h-10 md:h-44" : "h-12 md:h-64"
                             )}
                             priority
                         />
@@ -65,8 +65,8 @@ export function Header() {
                         ))}
                     </nav>
 
-                    <div className="ml-auto flex items-center gap-4 shrink-0">
-                        <Link href={CALENDLY_URL} target="_blank" className="hidden sm:block">
+                    <div className="ml-auto flex items-center gap-3 shrink-0">
+                        <Link href={CALENDLY_URL} target="_blank" className="hidden md:block">
                             <Button size="sm">Prenota una Call</Button>
                         </Link>
 
@@ -81,14 +81,14 @@ export function Header() {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="md:hidden border-t border-gray-200 animate-in fade-in slide-in-from-top-2 duration-200">
-                        <nav className="flex flex-col p-6 space-y-4 bg-white">
+                    <div className="md:hidden border-t border-gray-200">
+                        <nav className="flex flex-col p-5 gap-4 bg-white">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMenuOpen(false)}
-                                    className="text-lg font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                                    className="text-base font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
                                 >
                                     {link.label}
                                 </Link>
@@ -98,7 +98,7 @@ export function Header() {
                                 target="_blank"
                                 onClick={() => setIsMenuOpen(false)}
                             >
-                                <Button className="w-full justify-center">Prenota una Call</Button>
+                                <Button className="w-full justify-center mt-1">Prenota una Call</Button>
                             </Link>
                         </nav>
                     </div>
