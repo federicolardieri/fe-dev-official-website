@@ -35,7 +35,7 @@ export function Header() {
             <div className={cn(
                 "transition-all duration-500",
                 scrolled
-                    ? "w-[calc(100%-3rem)] max-w-5xl rounded-2xl bg-white/95 backdrop-blur-xl border border-gray-200 shadow-2xl shadow-black/10 px-4 md:px-6"
+                    ? "w-[calc(100%-3rem)] max-w-5xl rounded-2xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-xl shadow-black/40 px-4 md:px-6"
                     : "w-full bg-white border-b border-gray-200 px-4 md:px-6"
             )}>
                 <div className="relative flex h-14 md:h-16 items-center overflow-visible">
@@ -47,7 +47,7 @@ export function Header() {
                             height={271}
                             className={cn(
                                 "w-auto object-contain transition-all duration-500",
-                                scrolled ? "h-10 md:h-12" : "h-12 md:h-14"
+                                scrolled ? "h-10 md:h-12 brightness-0 invert" : "h-12 md:h-14"
                             )}
                             priority
                         />
@@ -58,7 +58,10 @@ export function Header() {
                             <Link
                                 key={link.label}
                                 href={link.href}
-                                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                                className={cn(
+                                    "text-sm font-medium transition-colors",
+                                    scrolled ? "text-white/80 hover:text-white" : "text-gray-600 hover:text-gray-900"
+                                )}
                             >
                                 {link.label}
                             </Link>
@@ -71,7 +74,10 @@ export function Header() {
                         </Link>
 
                         <button
-                            className="md:hidden p-2 text-gray-500 hover:text-gray-900 transition-colors"
+                            className={cn(
+                                "md:hidden p-2 transition-colors",
+                                scrolled ? "text-white/70 hover:text-white" : "text-gray-500 hover:text-gray-900"
+                            )}
                             onClick={toggleMenu}
                             aria-label="Toggle Menu"
                         >
@@ -81,14 +87,17 @@ export function Header() {
                 </div>
 
                 {isMenuOpen && (
-                    <div className="md:hidden border-t border-gray-200">
-                        <nav className="flex flex-col p-5 gap-4 bg-white">
+                    <div className={cn("md:hidden border-t", scrolled ? "border-white/10" : "border-gray-200")}>
+                        <nav className={cn("flex flex-col p-5 gap-4", scrolled ? "bg-transparent" : "bg-white")}>
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.href}
                                     href={link.href}
                                     onClick={() => setIsMenuOpen(false)}
-                                    className="text-base font-medium text-gray-600 hover:text-gray-900 transition-colors py-1"
+                                    className={cn(
+                                        "text-base font-medium transition-colors py-1",
+                                        scrolled ? "text-white/80 hover:text-white" : "text-gray-600 hover:text-gray-900"
+                                    )}
                                 >
                                     {link.label}
                                 </Link>
